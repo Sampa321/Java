@@ -1,17 +1,16 @@
-package ClassPractice.Method;
-//Instance method
+package PdfNote.Method.Q3;
+
 public class A {
     int a;
     int b;
-    public void add(){
-        System.out.println("sum:"+(a+b));
+    public void show(){
+        System.out.println("Hello");
+        System.out.println(a+b);
     }
-
     public static void main(String[] args) {
-        A obj1=new A();
-        obj1.a=100;
-        obj1.b=50;
-        obj1.add();
+        A obj = new A();
+        obj.a = 10;
+        obj.b=20;
+        obj.show();
     }
-}                
-
+}
