@@ -1,16 +1,21 @@
-package PdfNote.Method.Q3;
+package PdfNote.Method.Q4;
 
 public class A {
-    int a;
-    int b;
+    int a, b;
     public void show(){
-        System.out.println("Hello");
-        System.out.println(a+b);
+        System.out.println(a+" "+b);
     }
     public static void main(String[] args) {
         A obj = new A();
-        obj.a = 10;
+        obj.show();
+        obj.a=10;
+        obj.b=obj.a;
+        obj.show();
         obj.b=20;
         obj.show();
+        A obj2 = obj;
+        obj2.a=5;
+        obj2.b= obj2.a;
+        obj2.show();
     }
 }
